@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Cmugik's cover letter to splunk!">
+    <meta name="author" content="cmugik">
+    <title>cmugik's cover letter</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <style>
+        :root {
+            --primary-color: #514B4C;
+            --secondary-color: white;
+            --text-color: #EDEADE;
+            --background-dark: #0A0A0A;
+            --background-white: #EDEADE;
+            --spacing-unit: 2rem;
+        }
+
+        body {
+            font-family: Calibri, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: var(--background-dark);
+            color: var(--text-color);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header-bar {
+            height: calc(3*var(--spacing-unit));
+            background-color: var(--background-white);
+            min-height: calc(2*var(--spacing-unit));
+            color: var(--background-dark);
+            align-items: center;
+            padding-left: calc(2*var(--spacing-unit));
+            display: flex;
+            gap: calc(2*var(--spacing-unit));
+        }
+
+        .header-bar img {
+            max-width: calc(2.25*var(--spacing-unit));
+            max-height: calc(2.25*var(--spacing-unit));
+        }
+
+        .blurb-project-section {
+            padding: var(--spacing-unit);
+            display: flex;
+            gap: calc(3*var(--spacing-unit));
+            flex: 1;
+        }
+
+        .cover-letter-content p {
+            text-indent: var(--spacing-unit);
+            font-size: 17px;
+        }
+
+        .project-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+            gap: calc(0.5*var(--spacing-unit));
+        }
+
+        .project-section a,
+        a:visited,
+        a:active,
+        a:hover {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .project-orb {
+            min-width: 33vw;
+            min-height: calc(5*var(--spacing-unit));
+            align-content: center;
+            border-width: 2px;
+            border-radius: 40px;
+            border-color: var(--background-white);
+            border-style: ridge;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s;
+        }
+
+        .project-orb:hover {
+            background-color: rgba(237, 234, 222, 0.1);
+        }
+
+        .photo-popup {
+            display: none;
+            position: fixed;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .popup-content {
+            display: flex;
+            flex-direction: column;
+            background-color: var(--background-dark);
+            border: 2px solid var(--background-white);
+            border-radius: 20px;
+            width: auto;
+            max-height: 90vh;
+            max-width: 83%;
+            margin-top: var(--spacing-unit);
+            padding-left: 20px;
+            padding-bottom: 20px;
+            overflow-y: auto;
+            text-align: center;
+        }
+
+        .close-btn {
+            color: var(--text-color);
+            font-size: 30px;
+            cursor: pointer;
+            font-weight: bold;
+            text-align: right;
+            padding-right: var(--spacing-unit);
+        }
+
+        .popup-photo-flex-display img {
+            height: auto;
+            border-radius: 10px;
+            border: 1px solid var(--text-color);
+        }
+
+        .footer-bar {
+            width: 100vw;
+            height: var(--spacing-unit);
+            background-color: var(--background-white);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header-bar">
+        <img src="./assets/logo.png"> cmugik / caleb kellett
+    </div>
+    <div class="blurb-project-section">
+        <div class="blurb-section">
+            <div class="cover-letter-content">
+                Dear Hiring Manager,
+                <p>I am excited to apply for the junior Frontend Software Engineer position at Splunk – data collection
+                    and analysis is a long-term interest of mine. I believe I fit all but two of the nice-to-haves, in
+                    addition to having completed a Bachelor's in Computer Science from UBC with a 3.75 GPA, and would be
+                    an excellent addition to the team.</p>
+
+                <p>I'm very interested in front-end development. I'm currently working on a wedding website for my
+                    sister's wedding in August (source available on my GitHub), and working on a UI/UX for something
+                    deeply personal and important helps you realize how much opportunity there is to make everything as
+                    simple, beautiful, and effective as possible for the user, from my grandparents in their 70s to my
+                    teenage cousins who will almost certainly scroll through everything without really reading. I'm more
+                    experienced with Vue (I find for one-man personal projects the simplicity is best), but I'm also
+                    currently working on a React-based website to provide users with real-time virtual auction data to
+                    learn more about the framework.</p>
+
+                <p>I've been using version control and automated test frameworks (mostly in Java, JavaScript, and C#)
+                    since my second year of university, and I'm very comfortable with them.</p>
+
+                <p>In addition to software written during my undergrad like our game Ascent, I've worked on a number of
+                    large personal projects. I completed 95% of a multi-platform mobile invoicing app, automated a
+                    significant portion of a bookkeeper's job, and am working on a data analysis website I expect to
+                    serve hundreds to thousands of monthly users. During the development of our runner-up winning term
+                    project Ascent, we followed Agile practices, and I tend to use an iterative development cycle for
+                    personal projects and in my writing.</p>
+
+                <p>Regarding the desire for strong communication skills, I hope this letter demonstrates some of my
+                    ability. I originally intended on minoring in philosophy during my degree, and while I fell a few
+                    credits short due to COVID-era class cancellations, I believe the courses I completed and an old job
+                    in retail (shift supervisor) have given me a strong foundation in written and verbal communication.
+                    I've also recently been sketching out articles for an economics & philosophy-focused Substack. The
+                    first is on internalizing externalities and the areas of conflict between externality-internalizing
+                    mechanisms and broader (or narrower) public welfare.</p>
+                Thank you for your consideration.
+            </div>
+        </div>
+        <div class="project-section">
+            <div id="wedding-website-orb" class="project-orb">
+                <h1>Wedding Website</h1>
+            </div>
+            <p>Click For Previews!</p>
+            <a href="https://kevinmkchin.itch.io/ascent">
+                <div class="project-orb">
+                    <h1>Ascent</h1>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div id="wedding-photos-popup" class="photo-popup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <div class="popup-photo-flex-display">
+                <div class="popup-photos">
+                    <img src="./assets/s1.png" alt="Wedding Website Preview 1">
+                    <img src="./assets/s2.png" alt="Wedding Website Preview 2">
+                    <img src="./assets/s3.png" alt="Wedding Website Preview 3">
+                    <img src="./assets/s4.png" alt="Wedding Website Preview 4">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bar">
+    </div>
+
+    <script>
+
+        const weddingOrb = document.getElementById('wedding-website-orb');
+        const photoPopup = document.getElementById('wedding-photos-popup');
+        const closeBtn = document.querySelector('.close-btn');
+
+        weddingOrb.addEventListener('click', function () {
+            photoPopup.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        });
+
+        closeBtn.addEventListener('click', function () {
+            photoPopup.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        });
+
+        photoPopup.addEventListener('click', function (event) {
+            if (event.target === photoPopup) {
+                photoPopup.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+    </script>
+</body>
+
+</html>
