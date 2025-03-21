@@ -54,12 +54,23 @@
             align-items: center;
             padding-left: calc(2*var(--spacing-unit));
             display: flex;
-            gap: calc(2*var(--spacing-unit));
         }
 
         .header-bar img {
             max-width: calc(2.25*var(--spacing-unit));
             max-height: calc(2.25*var(--spacing-unit));
+        }
+
+        .header-start {
+            display: flex;
+            align-items: center;
+            flex: 1;
+            gap: calc(2*var(--spacing-unit));
+        }
+
+        .header-end {
+            padding-right: calc(6.65*var(--spacing-unit));
+            font-size: 22px;
         }
 
         .blurb-project-section {
@@ -163,42 +174,70 @@
 
 <body>
     <div class="header-bar">
-        <img src="./assets/logo.png"> cmugik / caleb kellett
+        <div class="header-start">
+            <img src="./assets/logo.png">
+            cmugik / caleb kellett
+        </div>
+        <div class="header-end">
+            <a href="https://github.com/cmugik"> github </a>
+        </div>
     </div>
     <div class="blurb-project-section">
         <div class="blurb-section">
             <div class="cover-letter-content">
                 Dear Hiring Manager,
-                <p>I am excited to apply for the junior Frontend Software Engineer position at Splunk – data collection
-                    and analysis is a long-term interest of mine. I believe I fit all but two of the nice-to-haves, in
-                    addition to having completed a Bachelor's in Computer Science from UBC with a 3.75 GPA, and would be
+                <p>I am excited to apply for the junior Frontend Software Engineer position at Splunk – data
+                    collection
+                    and analysis is a long-term interest of mine. I believe I fit all but two of the
+                    nice-to-haves, in
+                    addition to having completed a Bachelor's in Computer Science from UBC with a 3.75 GPA,
+                    and would be
                     an excellent addition to the team.</p>
 
-                <p>I'm very interested in front-end development. I'm currently working on a wedding website for my
-                    sister's wedding in August (source available on my GitHub), and working on a UI/UX for something
-                    deeply personal and important helps you realize how much opportunity there is to make everything as
-                    simple, beautiful, and effective as possible for the user, from my grandparents in their 70s to my
-                    teenage cousins who will almost certainly scroll through everything without really reading. I'm more
-                    experienced with Vue (I find for one-man personal projects the simplicity is best), but I'm also
-                    currently working on a React-based website to provide users with real-time virtual auction data to
+                <p>I'm very interested in front-end development. I'm currently working on a wedding website
+                    for my
+                    sister's wedding in August (source available on my GitHub), and working on a UI/UX for
+                    something
+                    deeply personal and important helps you realize how much opportunity there is to make
+                    everything as
+                    simple, beautiful, and effective as possible for the user, from my grandparents in their
+                    70s to my
+                    teenage cousins who will almost certainly scroll through everything without really
+                    reading. I'm more
+                    experienced with Vue (I find for one-man personal projects the simplicity is best), but
+                    I'm also
+                    currently working on a React-based website to provide users with real-time virtual
+                    auction data to
                     learn more about the framework.</p>
 
-                <p>I've been using version control and automated test frameworks (mostly in Java, JavaScript, and C#)
+                <p>I've been using version control and automated test frameworks (mostly in Java,
+                    JavaScript, and C#)
                     since my second year of university, and I'm very comfortable with them.</p>
 
-                <p>In addition to software written during my undergrad like our game Ascent, I've worked on a number of
-                    large personal projects. I completed 95% of a multi-platform mobile invoicing app, automated a
-                    significant portion of a bookkeeper's job, and am working on a data analysis website I expect to
-                    serve hundreds to thousands of monthly users. During the development of our runner-up winning term
-                    project Ascent, we followed Agile practices, and I tend to use an iterative development cycle for
+                <p>In addition to software written during my undergrad like our game Ascent, I've worked on
+                    a number of
+                    large personal projects. I completed 95% of a multi-platform mobile invoicing app,
+                    automated a
+                    significant portion of a bookkeeper's job, and am working on a data analysis website I
+                    expect to
+                    serve hundreds to thousands of monthly users. During the development of our runner-up
+                    winning term
+                    project Ascent, we followed Agile practices, and I tend to use an iterative development
+                    cycle for
                     personal projects and in my writing.</p>
 
-                <p>Regarding the desire for strong communication skills, I hope this letter demonstrates some of my
-                    ability. I originally intended on minoring in philosophy during my degree, and while I fell a few
-                    credits short due to COVID-era class cancellations, I believe the courses I completed and an old job
-                    in retail (shift supervisor) have given me a strong foundation in written and verbal communication.
-                    I've also recently been sketching out articles for an economics & philosophy-focused Substack. The
-                    first is on internalizing externalities and the areas of conflict between externality-internalizing
+                <p>Regarding the desire for strong communication skills, I hope this letter demonstrates
+                    some of my
+                    ability. I originally intended on minoring in philosophy during my degree, and while I
+                    fell a few
+                    credits short due to COVID-era class cancellations, I believe the courses I completed
+                    and an old job
+                    in retail (shift supervisor) have given me a strong foundation in written and verbal
+                    communication.
+                    I've also recently been sketching out articles for an economics & philosophy-focused
+                    Substack. The
+                    first is on internalizing externalities and the areas of conflict between
+                    externality-internalizing
                     mechanisms and broader (or narrower) public welfare.</p>
                 Thank you for your consideration.
             </div>
